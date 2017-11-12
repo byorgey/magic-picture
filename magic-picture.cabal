@@ -1,0 +1,30 @@
+name:                magic-picture
+version:             0.1.0.0
+synopsis:            Create 'magic picture' activities from images.
+description:         XXX
+license:             BSD3
+license-file:        LICENSE
+author:              Brent Yorgey
+maintainer:          byorgey@gmail.com
+copyright:           Brent Yorgey 2017
+category:            Game
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable magic-picture
+  main-is:             Main.hs
+  build-depends:       base >=4.9 && <4.10,
+                       split,
+                       containers,
+                       optparse-applicative,
+                       random-shuffle,
+                       friday,
+                       JuicyPixels,
+                       friday-juicypixels,
+                       diagrams-lib,
+                       diagrams-pgf,
+                       diagrams-contrib,
+                       colour
+  hs-source-dirs:      src
+  default-language:    Haskell2010
